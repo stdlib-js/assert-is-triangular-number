@@ -64,38 +64,30 @@ Accordingly, an integer `x` is a [triangular number][triangular-number] **if and
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-triangular-number
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isTriangularNumber = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-triangular-number@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isTriangularNumber = require( 'path/to/vendor/umd/assert-is-triangular-number/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-triangular-number@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isTriangularNumber;
-})();
-</script>
+var isTriangularNumber = require( '@stdlib/assert-is-triangular-number' );
 ```
 
 #### isTriangularNumber( value )
@@ -180,14 +172,9 @@ bool = isTriangularNumber.isObject( new Number( 36.0 ) );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-triangular-number@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Number = require( '@stdlib/number-ctor' );
+var isTriangularNumber = require( '@stdlib/assert-is-triangular-number' );
 
 var bool = isTriangularNumber( 36.0 );
 // returns true
@@ -215,11 +202,6 @@ bool = isTriangularNumber( '0.5' );
 
 bool = isTriangularNumber( null );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -316,13 +298,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-integer]: https://github.com/stdlib-js/assert-is-integer/tree/umd
+[@stdlib/assert/is-integer]: https://github.com/stdlib-js/assert-is-integer
 
-[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number/tree/umd
+[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number
 
-[@stdlib/assert/is-square-number]: https://github.com/stdlib-js/assert-is-square-number/tree/umd
+[@stdlib/assert/is-square-number]: https://github.com/stdlib-js/assert-is-square-number
 
-[@stdlib/assert/is-square-triangular-number]: https://github.com/stdlib-js/assert-is-square-triangular-number/tree/umd
+[@stdlib/assert/is-square-triangular-number]: https://github.com/stdlib-js/assert-is-square-triangular-number
 
 <!-- </related-links> -->
 
