@@ -82,13 +82,18 @@ Accordingly, an integer `x` is a [triangular number][triangular-number] **if and
 ## Usage
 
 ```javascript
+import isTriangularNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-triangular-number@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-triangular-number/tags). For example,
+
+```javascript
 import isTriangularNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-triangular-number@v0.2.2-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-triangular-number@v0.2.2-deno/mod.js';
+import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-triangular-number@deno/mod.js';
 ```
 
 #### isTriangularNumber( value )
@@ -175,7 +180,7 @@ bool = isTriangularNumber.isObject( new Number( 36.0 ) );
 
 ```javascript
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
-import isTriangularNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-triangular-number@v0.2.2-deno/mod.js';
+import isTriangularNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-triangular-number@deno/mod.js';
 
 var bool = isTriangularNumber( 36.0 );
 // returns true
